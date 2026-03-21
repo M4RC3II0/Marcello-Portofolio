@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+.st{
+    margin-top: 10vh;
+    padding: 5vh;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    width: 30vw;
+    gap: 3%;
+    background-color: rgb(44, 83, 150);
+    color: white;
+    border-radius: 14px;
+}
+
+.nav{
+    background-color: rgb(44, 83, 150);
+    width: 100%;
+    color: aliceblue;
+    height: 14vh;
+    text-align: center;
+}
+
+.smth{
+    display: flex;
+    flex-direction: row;
+}
+
+.sth{
+    max-width: 45vw;
+    margin-top: 1.5vh;
+    overflow-y: auto;
+    max-height: 83vh;
+}
+
+input{
+    cursor: pointer;
+}
+
+.sth::-webkit-scrollbar{
+    display: none;
+}
+
+.chosen input {
+    background-color: green;
+    border: 2px solid darkgreen;
+}
+
+.locked input {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+
+.hasil{
+    font-size: 120px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    width: 23vw;
+    height: 40vh;
+    background-color: rgb(44, 83, 150);
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.522);
+}
+
+.d{
+    color: rgb(0, 0, 0);
+    margin-top: 20vh;
+    margin-left: 15vw;
+}
+
+
+.d a{
+    font-weight: 600;
+    margin-left: 8vw;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#hasil{
+    padding: 10vh;
+}
+
+.d a:hover{
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .smth{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .st{
+        justify-content: center;
+        width: 70%;
+    }
+
+    .sth{
+        margin-left: 3vw;
+        max-width: 90%;
+        max-height: 34vh;
+        flex-wrap: wrap;
+    }
+
+    .hasil{
+        margin-left: 3vh;
+        width: 90%;
+    }
+
+    .d a{
+        margin: 0;
+        margin-left: 40vw;
+    }
+
+    .d{
+        margin-top: 2vh;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bks">
+    <h1>⚡<span style="font-family: jokerman; margin-right: 1vh;">RANDOMIZER</span>by Marcello⚡</h1>
+    <div class="utama">
+        <input type="number" id="angka" placeholder="tebak angka disini 1-10">
+        <button onclick="tebak()" id="tebak">tebak</button>
+        <div class="ko">
+        <p>hasil : <span id="hasil"></span></p>
+        </div>
+        <button onclick="lagi()" id="lagi">main lagi</button>
+    </div>
+    </div>
+    
+
+    <script>
+        let comp = Math.floor(Math.random()*10)+1;
+        function tebak() {
+            let angka = parseFloat(document.getElementById('angka').value);
+        if (comp === angka) {  
+            document.getElementById('hasil').innerHTML = `kamu berhasil menebak angka`;
+            document.getElementById('tebak').disabled = true
+        }else if (angka < 1 || angka > 10) {
+            alert('masukkan angka antara 1-10!');
+        }else if (comp < angka) {
+            document.getElementById('hasil').innerHTML = `angka yang dipilih terlalu besar`;
+            document.getElementById('tebak').disabled = true
+        }else if (comp > angka) {
+            document.getElementById('hasil').innerHTML = `angka yang dipilih terlalu kecil`;
+            document.getElementById('tebak').disabled = true
+        }
+        }
+
+        function lagi() {
+            document.getElementById('angka').value = '';
+            document.getElementById('hasil').innerHTML = ``;
+            document.getElementById('tebak').disabled = false
+            comp = Math.floor(Math.random()*10)+1;
+            document.getElementById('resetBtn').onclick = ()=>{ resetBoard(); syncEngineToBoard(); };
+        }
+        
+    </script>
+</body>
+</html>

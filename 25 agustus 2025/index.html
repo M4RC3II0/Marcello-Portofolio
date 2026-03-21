@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 agustus 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-family: kunstler script; text-align: center; font-size: 24pt;">simple calculator by Marcello 8C</h1>
+    <div class="bks-calc">
+        <div class="calculator">
+        <div class="buttons">
+            <input type="text"  id="result" readonly><br><br>
+
+            <div class="kk">
+            <button class="clear">C</button><br><br>
+
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">/</button><br><br>
+
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">*</button><br><br>
+
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">+</button><br><br>
+
+            <button style="margin-left: 75px;" class="number">0</button>
+            <button style="margin-left: 74px;" class="operator">-</button><br><br>
+
+            <button style="width: 220px;" class="operator">=</button>
+            <button class="decimal">.</button>
+            </div>   
+        </div>
+    </div>
+    </div>
+    
+
+    <script>
+        const buttonEL = document.querySelectorAll("button")
+        const inputFieldEL = document.getElementById("result")
+
+        for (let i = 0; i < buttonEL.length; i++) {
+            buttonEL[i].addEventListener("click", () => {
+                const buttonValue = buttonEL[i].textContent;
+                    if(buttonValue === "C") {
+                        clearResult();
+                    }else if (buttonValue === "=") {
+                        CalculateResult();
+                    }else{
+                        appendValue(buttonValue)
+                    }  
+            })
+        }
+        function clearResult(){
+            inputFieldEL.value = ""
+        }
+        function CalculateResult() {
+            inputFieldEL.value=eval(inputFieldEL.value)
+        }
+        function appendValue(buttonValue){
+            inputFieldEL.value+=buttonValue
+        }
+    </script>
+</body>
+</html>

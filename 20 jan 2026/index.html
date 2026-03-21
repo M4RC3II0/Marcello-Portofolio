@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bungkus">
+        <h2 style="font-family: kunstler script;">Aplikasi add nilai siswa</h2>
+        <input type="text" id="nama" placeholder="Nama siswa"onkeypress="if(event.key === 'Enter'){ tambahSiswa(); }">
+        <input type="number" id="nilai" placeholder="Nilai siswa"onkeypress="if(event.key === 'Enter'){ tambahSiswa(); }">
+        <input type="number" id="kehadiran" placeholder="Kehadiran siswa"onkeypress="if(event.key === 'Enter'){ tambahSiswa(); }">
+        <button onclick="tambahSiswa()">Tambah Siswa</button>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Nilai</th>
+                <th>Kehadiran</th>
+                <th>Grade</th>
+                <th>Status</th>
+            </tr>
+            <tbody id="tabelSiswa"></tbody>
+        </table>
+        <div class="rata-rata" id="rataRata"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 style="font-size: 30pt; font-family: kunstler script;">Program perkalian by Marcello</h1>
+        <div class="bks">
+            <div class="calc-kali">
+            <span>Kalkulator perkalian</span><br>
+            <input type="number" id="angka"><br><br>
+            <button onclick="hitung()">hitung</button>
+            <div class="hasill">
+            <p>hasil: <br><span id="hasil"></span></p>
+            </div>
+        </div>
+        </div>
+
+    <script>
+        function hitung() {
+            let angka = parseFloat(document.getElementById('angka').value);
+            let result = '';
+            for (let i = 1; i <= 10; i++) {
+                result += `${i} x ${angka} = ${i*angka}<br>`
+            }           
+            document.getElementById('hasil').innerHTML = result; 
+        }
+        
+    </script>
+</body>
+</html>

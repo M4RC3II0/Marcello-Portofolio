@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-kali{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    border-radius: 7px;
+    font-size: 20pt;
+    justify-content: center;
+    color: aliceblue;
+    width: 25%;
+    height: 70vh;
+    background: linear-gradient(rgb(118, 118, 118), rgb(80, 79, 79), rgb(30, 30, 30), black);
+    box-shadow: 12px 15px 12px rgba(0, 0, 0, 0.358);
+}
+
+input{
+    background-color: rgb(60, 57, 57);
+    color: aliceblue;
+    width: 200px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(60, 57, 57);
+    color: aliceblue;
+}
+
+.hasill{
+    overflow-y: scroll;
+    width: 90%;
+    height: 60vh;
+}
+
+.hasill::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .calc-kali{
+        width: 80%;
+        height: 80vh;
+    }
+}

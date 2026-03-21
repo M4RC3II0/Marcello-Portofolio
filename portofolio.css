@@ -1,0 +1,1720 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    scroll-behavior : smooth;
+}
+
+button a{
+    text-decoration : none;
+    color : white;
+}
+
+h2{
+    transition : 0.3s;
+}
+
+.icon{
+    background-color : rgb(121, 165, 34);
+    color : white;
+    font-weight : bold;
+    display : flex;
+    justify-content : center;
+    text-align : center;
+    align-items : center;
+    border-radius : 50%;
+    width : 6vh;
+    height : 6vh;
+}
+
+.ico{
+    margin-left : 14vw;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    gap : 7px;
+}
+
+.nav{
+    display : flex;
+    flex-direction : row;
+    width : 100%;
+    align-items : center;
+    position : fixed;
+    justify-content : space-between;
+    height : 10vh;
+    background-color : rgb(248, 248, 248);
+    box-shadow : 0 2px 4px rgba(0, 0, 0, 0.1)    ;
+    z-index : 1000;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu{
+    margin-right : 20vw;
+    display : flex;
+    align-items : center;
+    gap : 15px;
+}
+
+.menu li{
+    list-style : none;
+    display : flex;
+    align-items : center;
+}
+
+.menu li a{
+    font-size : 12pt;
+    color : #96ff4b;
+    text-decoration : none;
+}
+
+.menu li a.active{
+    justify-content : center;
+    align-items : center;
+    display : flex;
+    font-size : 12pt;
+    background-color : rgb(121, 165, 34);
+    color : white;
+    border : none;
+    padding : 7px 15px;
+    border-radius : 8px;
+    height : fit-content;
+    transition : 0.3s;
+
+}
+
+button{
+    justify-content : center;
+    align-items : center;
+    display : flex;
+    font-size : 12pt;
+    background-color : rgb(121, 165, 34);
+    color : white;
+    border : none;
+    padding : 7px 15px;
+    border-radius : 8px;
+    height : fit-content;
+    transition : 0.3s;
+    box-shadow : 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover{
+    background-color : rgb(101, 145, 14);
+    cursor : pointer;
+    scale : 1.05;
+}
+
+.content{
+    margin-top : 25vh;
+    width : 80vw;
+    padding-left : 12vw;
+}
+
+.content h1{
+    font-size : 50pt;
+    color : yellowgreen;
+}
+
+.content p{
+    font-size : 15pt;
+    color : yellowgreen;
+}
+
+.content button{
+    margin-top : 2vh;
+}
+
+section {
+    display : flex;
+    height : 100vh;
+    width : 100%;
+    color : rgb(0, 0, 0);
+    font-size : 30px;
+}
+
+#Home{
+    background : linear-gradient(30deg,white, white, white, rgb(111, 231, 111));
+}
+
+.Left{
+    height : 100vh;
+    width : 65%;
+}
+
+.infos{
+    display : flex;
+    flex-direction : row;
+    padding-left : 12vw;
+    gap : 5px;
+    margin-top : 10vh;
+}
+
+.infos h2{
+    font-size : 24pt;
+}
+
+.infos p{
+    font-size : 11pt;
+    padding-top : 1vh;
+}
+
+.experience,.project, .grade{
+    width : 15vw;
+    height : 12vh;
+    background-color : rgba(121, 165, 34, 0.559);
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    transition : 0.3s;
+}
+
+.experience:hover, .project:hover, .grade:hover{
+    background-color : rgba(121, 165, 34, 0.8);
+    cursor : pointer;
+    scale : 1.05;
+}
+
+.Right{
+    width : 35%;
+    height : 100vh;
+    padding-top : 24vh;
+}
+
+.bks-img{
+    width : 100%;
+    height : 100%;
+}
+
+.img{
+    border-radius : 8px;
+    background-image : url("ganteng.jpg");
+    background-size : cover;
+    width : 65%;
+    height : 60%;
+}
+
+.abt{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    background : linear-gradient(white, white, rgb(232, 224, 206));
+    width : 100%;
+    height : 80%;
+}
+
+.abo{
+    display : flex;
+    flex-direction : row;
+    border-radius : 8px;
+    height : 80vh;
+    width : 80%;
+    background-color : rgb(237, 237, 237);
+    margin-top : 30vh;
+}
+
+.lef{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 45%;
+    height : 100%;
+}
+
+.ig-lef{
+    display : flex;
+    border-radius : 8px;
+    background-image : url("ganteng.jpg");
+    background-size : cover;
+    width : 70%;
+    align-items : center;
+    justify-content : center;
+    height : 70%;
+}
+
+.raik{
+    margin-top : 25vh;
+}
+
+.raik h3{
+    font-size : 20pt;
+}
+
+.raik p{
+    font-size : 13pt;
+    color : rgba(0, 0, 0, 0.603);
+}
+
+.ico h2:hover{
+    color : rgb(92, 138, 1);
+    cursor : pointer;
+}
+
+.inf{
+    border-radius : 8px;
+    margin-top : 54vh;
+    width : 70%;
+    height : 10vh;
+    background-color : #fff;
+}
+
+.icons {
+  text-align : center;
+  margin : 20px 0;
+}
+
+.icons a {
+  color : rgb(77, 105, 21);
+  font-size : 17pt;
+  text-decoration : none;
+  margin : 0 10px;
+}
+
+.icons a:hover {
+  color : rgb(92, 138, 1);
+  cursor : pointer;
+}
+
+.tony{
+    display : flex;
+    flex-direction : row;
+    margin-top : 4vh;
+    gap : 2vw;
+}
+
+.proj{
+    background-color : rgb(121, 165, 34);
+    width : 10vw;
+    height : 7vh;
+}
+
+.cv{
+    width : 10vw;
+    height : 7vh;
+    background : none;
+    border : 1px solid rgb(0, 0, 0);
+    border-radius : 8px;
+    color : black;
+}
+
+.back-to-top {
+    position : fixed;
+    bottom : 20px;
+    right : 20px;
+    background-color : rgb(121, 165, 34);
+    color : white;
+    border : none;
+    width : 50px;
+    height : 50px;
+    border-radius : 50%;
+    display : none;
+    cursor : pointer;
+}
+
+.back-to-top.show {
+    display : block;
+}
+
+.content-new{
+    margin-top : 35vh;
+    padding-left : 12vw;
+}
+
+.content-new h1{
+    font-size : 32pt;
+    color : rgba(0, 0, 0, 0.8);
+}
+
+.content-new p{
+    font-size : 12pt;
+    color : rgba(0, 0, 0, 0.5);
+}
+
+.proce{
+    display : flex;
+    flex-direction : row;
+    width : 100%;
+}
+
+.Lefft, .Righht{
+    width : 50%;
+    height : 100vh;
+}
+
+.Righht{
+    display : flex;
+    flex-direction : row;
+}
+
+.research ,.analis ,.design ,.launch{
+    width : 17vw;
+    height : 17vw;
+    display : flex;
+    flex-direction : column;
+    background-color : #e3eada;
+    border-radius : 8px;
+}
+
+.l1, .r1{
+    display : flex;
+    flex-direction : column;
+    width : 36.3%;
+    gap : 2vh;
+}
+
+.l1{
+    margin-top : 14vh;
+}
+
+.r1{
+    margin-top : 17vh;
+}
+
+.research i,.analis i,.design i,.launch i{
+    font-size : 25pt;
+    color : rgba(98, 141, 13, 0.688);
+}
+
+.research h4,.analis h4,.design h4,.launch h4{
+    font-size : 18pt;
+    margin-top : 2vh;
+}
+
+.research p,.analis p,.design p,.launch p {
+    font-size : 13pt;
+    padding-top : 1vh;
+    color : rgba(0, 0, 0, 0.5);
+}
+
+.bb .l2{
+    border-radius : 11px;
+    margin-left : 1.4vw;
+    display : flex;
+    margin-bottom : 2.3vh;
+    justify-content : center;
+    align-items : center;
+    width : 1vw;
+    height : 1vw;
+    padding : 4vh;
+    background-color : rgb(173, 200, 120);
+}
+
+.l2{
+    margin-top : 4vh;
+    border-radius : 11px;
+    margin-left : 1.4vw;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 1vw;
+    height : 1vw;
+    padding : 4vh;
+    background-color : rgb(173, 200, 120);
+}
+
+.r2{
+    margin-left : 1.4vw;
+}
+
+.bks-port{
+    margin-top : 16vh;
+    width : 100%;
+}
+
+.bk-port{
+    margin-top : 10vh;
+    width : 100%;
+}
+
+.port{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+.port h3{
+    font-size : 24t;
+}
+
+.port p{
+    margin-top : 2vh;
+    font-size : 12pt;
+    color : rgba(0, 0, 0, 0.4);
+    text-align : center;
+}
+
+.bks-isi{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+}
+
+.isi-port{
+    margin-top : 8vh;
+    gap : 0.6vw;
+    height : 112.07vh;
+    display : grid;
+    grid-template-columns : repeat(3, 1fr);
+    width : 80%;
+    overflow : hidden;
+    transition : 2s;
+}
+
+.pro1, .pro2, .pro3, .pro4, .pro5, .pro6,.pro7, .pro8, .pro9,.pro10,.pro11,.pro12{
+    width : 25vw;
+    height : 55vh;
+    border-radius : 8px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    box-shadow : 4px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.nn{
+    margin-top : 6vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+}
+
+.see{
+    height : 5vh;
+    width : 10vw;
+    border-radius : 5px;
+}
+
+#Portofolio{
+    height : 220vh;
+    display : flex;
+    flex-direction : column;
+}
+
+.Idea{
+    margin-top : 10vh;
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    height : 60vh;
+    justify-content : center;
+    align-items : center;
+    background-color : rgb(13, 16, 43);
+}
+
+.Idea h2{
+    color : white;
+    font-size : 24pt;
+}
+
+.Idea p{
+    color : rgba(255, 255, 255, 0.437);
+    font-size : 10pt;
+    margin-top : 2vh;
+    text-align : center;
+}
+
+.contact11{
+    align-items : center;
+    justify-content : center;
+    display : flex;
+    margin-top : 4vh;
+    width : 13vw;
+    height : 6vh;
+    border-radius : 4px;
+    background-color : rgb(149, 7, 149);
+    box-shadow : 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact11:hover{
+    background-color : rgb(129, 7, 129);
+    cursor : pointer;
+    scale : 1.05;
+}
+
+#Blog{
+    display : flex;
+    flex-direction : column;
+    background : linear-gradient(105deg,rgba(24, 227, 24, 0.374),white,white,white,white,white,white,white,white,lightblue);
+    transition : 2s;
+}
+
+.bks-bengkel{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+}
+
+.bengkel-master{
+    flex-direction : row;
+    margin-top : 8vh;
+    display : flex;
+    width : 70%;
+    gap : 31px;
+    overflow-x : scroll;
+}
+
+.bengkel-master::-webkit-scrollbar {
+    display : none;
+}
+
+.blog1, .blog2, .blog3, .blog4, .blog5, .blog6{
+    min-width : 15.8vw;
+    height : 36vh;
+    border-radius : 8px;
+    flex-shrink : 0;
+}
+
+.gamblog1, .gamblog2, .gamblog3, .gamblog4, .gamblog5, .gamblog6{
+    background-size : cover;
+    border-radius : 8px 8px 0 0;
+    width : 100%;
+    height : 70%;
+}
+
+.gamblog1{
+    background : rgb(255, 0, 255);
+}
+
+.gamblog2{
+    background : rgb(255, 0, 0);
+}
+
+.gamblog3{
+    background : rgb(255, 255, 0);
+}
+
+.gamblog4{
+    background : rgb(0, 255, 0);
+}
+
+.gamblog5{
+    background : rgb(0, 0, 255);
+}
+
+.gamblog6{
+    background : rgb(0, 255, 255);
+}
+
+.gemblog1, .gemblog2, .gemblog3, .gemblog4, .gemblog5, .gemblog6{
+    border-radius : 0 0 8px 8px;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.175);
+    border-right : 1px solid rgba(0, 0, 0, 0.175);
+    border-left : 1px solid rgba(0, 0, 0, 0.175);
+    width : 100%;
+    height : 30%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    gap : 1vh;
+}
+
+.bengkel-master p{
+    margin-top : 2vh;
+    font-size : 10pt;
+    font-weight : bold;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.bengkel-master h6{
+    font-size : 12pt;
+    
+}
+
+.both2{
+    display : flex;
+    flex-direction : row;
+    height : 100vh;
+    width : 100%;
+}
+
+.hub{
+    margin-left : 8vw;
+    width : 80%;
+    height : 30vh;
+}
+
+.keerie{
+    height : 100vh;
+    width : 50%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.keerie button{
+    margin-top : 3vh;
+    height : 5vh;
+    border-radius : 6px;
+    width : 9vw;
+}
+
+.keerie h2{
+    font-size : 28pt;
+}
+
+.keerie p{
+    margin-top : 2vh;
+    font-size : 12pt;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.keanan{
+    display : flex;
+    flex-direction : column;
+    width : 40%;
+    height : 100vh;
+    justify-content : center;
+    align-items : center;
+    gap : 2vw;
+}
+
+.keanan h4{ 
+    font-size : 16pt;
+}
+
+.keanan p{
+    margin-top : 2vh;
+    font-size : 11pt;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.UX, .UI, .WEB{
+    width : 34vw;
+    height : 18vh;
+    background-color : #e3eada;
+    border-radius : 8px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+#Services{
+    display : flex;
+    flex-direction : column;
+    height : 100vh;
+}
+
+#Contact{
+    display : flex;
+    flex-direction : column;
+    height : 215vh;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+p.label {
+    font-size : 0.78rem;
+    color : #aaa;
+    letter-spacing : 0.15em;
+    text-transform : uppercase;
+}
+
+.slide-con2{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    margin-top : 8vh;
+}
+
+.slider-container {
+    width : 80%;
+    height : 18vh;
+    overflow : hidden;
+    pointer-events : none;
+    user-select : none;
+    display : flex;
+    align-items : center;
+    -webkit-mask-image : linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image : linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.slider-track {
+    display : flex;
+    align-items : center;
+    width : max-content;
+    animation : slide 20s linear infinite;
+}
+
+.slide {
+    width : 220px;
+    height : 18vh;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 0 28px;
+    flex-shrink : 0;
+}
+
+.slide img {
+    max-width : 100%;
+    max-height : 7vh;
+    object-fit : contain;
+    display : block;
+}
+
+@keyframes slide {
+    0%   { transform : translateX(0); }
+    100% { transform : translateX(-1320px); }
+}
+
+.imsigma{
+    margin-top : 6vh;
+    font-size : 12pt;
+    color : rgb(0, 0, 0);
+    text-align : center;
+}
+
+.bks-d{
+    margin-top : 15vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.b-d{
+    border-radius : 80px;
+    background-color : #f8f8f8d4;
+    width : 86%;
+    height : 95vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.a-d{
+    background-color : #f3f0f0a4;
+    width : 94%;
+    height : 88%;
+    border-radius : 80px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.d{
+    width : 100%;
+    height : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    position : relative;
+}
+
+.discuss{
+    display : flex;
+    flex-direction : row;
+    background-color : #fff;
+    width : 94%;
+    height : 92%;
+    border-radius : 20px;
+    box-shadow : 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink : 0;
+    position : absolute;
+}
+
+.scu{
+    margin-top : 5vh;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 3vh;
+}
+
+.disc{
+    width : 50%;
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+}
+
+.bb{
+    margin-top : 5vh;
+}
+
+.bb p{
+    font-size : 10pt;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.bb h6{
+    font-size : 12pt;
+}
+
+.uss{
+    width : 50%;
+    height : 100%;
+}
+
+.uss p{
+    margin-top : 9vh;
+    font-size : 12pt;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.disc h2{
+    font-size : 24pt;
+    color : rgb(0, 0, 0);
+}
+
+.disc p{
+    font-size : 14pt;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.disc .l2{
+    font-size : 16pt;
+    border-radius : 11px;
+    margin-top : 3vh;
+    margin-left : 6vw;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 1vw;
+    height : 1vw;
+    padding : 3.5vh;
+    background-color : rgb(173, 200, 120);
+}
+
+.l2r1{
+    display : flex;
+    flex-direction : row;
+    gap : 7px;
+    align-items : center;
+}
+
+.sen{
+    gap : 7px;
+    display : flex;
+    flex-direction : column;
+}
+
+.q{
+    width : 99vw;
+}
+
+.ds{
+    margin-top : 90vh;
+    background-color : rgb(24, 27, 41);
+    width : 100%;
+    height : 31vh;
+    flex-shrink : 0;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+}
+
+.m{
+    position : absolute;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 100%;
+}
+
+.icon2{
+    background-color : rgb(121, 165, 34);
+    color : white;
+    font-weight : bold;
+    display : flex;
+    justify-content : center;
+    text-align : center;
+    align-items : center;
+    border-radius : 50%;
+    width : 6vh;
+    height : 6vh;
+    font-size : 14pt;
+}
+
+.ico2{
+    width : 35%;
+    height : 30vh;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    gap : 7px;
+}
+
+.ico2 h2{
+    font-size : 18pt;
+    color : white;
+}
+
+.agan{
+    margin-top : 3vh;
+    width : 30%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+.wa{
+    gap : 8px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : row;
+}
+
+.wa a{
+    text-decoration : none;
+    color : rgba(255, 255, 255, 0.579);
+    font-size : 12pt;
+}
+
+.ussr button{
+    margin-top : 3vh;
+    height : 5vh;
+    border-radius : 6px;
+    width : 9vw;
+}
+
+.agan h6{
+    font-size : 12pt;
+    text-align : center;
+    color : rgba(255, 255, 255, 0.579);
+}
+
+.copy{
+    width : 30%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.yright{
+    width : 100%;
+}
+
+.yright h6{
+    color : rgba(255, 255, 255, 0.579);
+    font-size : 12pt;
+}
+
+.ics{
+    margin-top : 4vh;
+    margin-left : 5vw;
+    display : flex;
+    gap : 7px;
+}
+
+.ics a {
+  color : rgb(77, 105, 21);
+  font-size : 17pt;
+  text-decoration : none;
+  margin : 0 10px;
+}
+
+.ics a:hover {
+  color : rgb(92, 138, 1);
+  cursor : pointer;
+}
+
+.ussr{
+    display : flex;
+    flex-direction : column;
+    gap : 7px;
+}
+
+input{
+    border : none;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.4);
+    height : 7vh;
+}
+
+#name, #email, #location, #message{
+    width : 90%;
+}
+
+#budget{
+    width : 35%;
+}
+
+#subject{
+    width : 53.3%;
+}
+
+/* old narrow breakpoint removed — replaced by full responsive section below */
+
+
+.imag1{
+    background-image : url("3nov.png");
+}
+
+.imag2{
+    background-image : url("4agu.png");
+}
+
+.imag3{
+    background-image : url("4nov.png");
+}
+
+.imag4{
+    background-image : url("11nov.png");
+}
+
+.imag5{
+    background-image : url("12agu.png");
+}
+
+.imag6{
+    background-image : url("13jan.png");
+}
+
+.imag7{
+    background-image : url("16sep.png");
+}
+
+.imag8{
+    background-image : url("18nov.png");
+}
+
+.imag9{
+    background-image : url("19agu.png");
+}
+
+.imag10{
+    background-image : url("20jan.png");
+}
+
+.imag11{
+    background-image : url("9sep.png");
+}
+
+.imag12{
+    background-image : url("25agu.png");
+}
+
+.imag1,.imag2,.imag3,.imag4,.imag5,.imag6,.imag7,.imag8,.imag9,.imag10,.imag11,.imag12{
+    height : 50%;
+    width : 100%;
+    background-position : center;
+    border-radius : 8px 8px 0 0;
+    background-size : cover;
+}
+
+.desc{
+    display : flex;
+    flex-direction : column;
+    gap : 1vh;
+    height : 50%;
+    width : 84%;
+}
+
+.eler{
+    margin-top : 3vh;
+    font-size : 10pt;
+    color : rgba(0, 0, 0, 0.4    );
+}
+
+.enis{
+    font-size : 13pt;
+    color : rgba(0, 0, 0, 0.4);
+}
+
+.desc button{
+    border : 1px solid rgb(0, 0, 0);
+    background : none;
+    color : rgba(0, 0, 0, 0.467);
+}
+
+@media (max-width: 768px) {
+
+    /* --- NAV --- */
+    .ico{
+        margin-left: 3vw;
+    }
+    .icon{
+        width: 5vh;
+        height: 5vh;
+        font-size: clamp(10px, 3vw, 14px);
+    }
+    .ico h2{
+        font-size: clamp(11px, 3.5vw, 14px);
+    }
+    .nav{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1.5vh 0;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+        gap: 8px;
+        width: 100%;
+        padding: 1vh 3vw 1.5vh;
+    }
+    .menu li a{
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+    .menu button{
+        margin: 0;
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+
+    /* --- HOME --- */
+    #Home{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5vh;
+    }
+    .Left{
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+    .Right{
+        width: 100%;
+        height: 45vh;
+        padding-top: 2vh;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+    .bks-img{
+        margin-top: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 70vw;
+        height: 38vh;
+        margin: 0 auto;
+    }
+    .content{
+        margin-top: 20vh;
+        padding-left: 6vw;
+        width: 90vw;
+        text-align: center;
+    }
+    .content h1{
+        font-size: clamp(22px, 8vw, 32px);
+        line-height: 1.2;
+    }
+    .content p{
+        font-size: clamp(11px, 3vw, 14px);
+        line-height: 1.5;
+    }
+    .content button{
+        margin: 2vh auto 0;
+        display: flex;
+        font-size: clamp(10px, 2.5vw, 12px);
+    }
+    .infos{
+        padding-left: 0;
+        margin-top: 4vh;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .experience, .project, .grade{
+        width: 28vw;
+        min-width: 85px;
+        height: 10vh;
+    }
+    .infos h2{
+        font-size: clamp(14px, 4.5vw, 20px);
+    }
+    .infos p{
+        font-size: clamp(8px, 2.2vw, 10px);
+    }
+
+    /* --- ABOUT --- */
+    #About{
+        height: auto;
+        padding: 10vh 0;
+    }
+    .abt{
+        margin-top: 6vh;
+        height: auto;
+        padding: 5vh 0;
+    }
+    .abo{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin-top: 0;
+        padding: 4vh 0;
+        gap: 3vh;
+    }
+    .lef{
+        width: 100%;
+        height: 38vh;
+        order: 2;
+    }
+    .ig-lef{
+        width: 70%;
+        height: 90%;
+    }
+    .inf{
+        margin-top: 34vh;
+        height: 8vh;
+        width: 88%;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons a{
+        font-size: 16px;
+    }
+    .raik{
+        margin-top: 2vh;
+        padding: 0 6vw;
+        text-align: center;
+        order: 1;
+    }
+    .raik h3{
+        font-size: clamp(14px, 4.5vw, 20px);
+    }
+    .raik p{
+        font-size: clamp(10px, 2.8vw, 13px);
+        line-height: 1.5;
+    }
+    .tony{
+        flex-wrap: wrap;
+        gap: 3vw;
+        justify-content: center;
+    }
+    .proj, .cv{
+        width: 40vw;
+        min-width: 120px;
+        height: 6vh;
+        font-size: clamp(10px, 2.5vw, 12px);
+    }
+
+    /* --- PROCESS --- */
+    #Process{
+        height: auto;
+        padding: 10vh 0;
+    }
+    .proce{
+        margin-top: 7vh;
+        flex-direction: column;
+    }
+    .Lefft, .Righht{
+        width: 100%;
+        height: auto;
+    }
+    .content-new{
+        margin-top: 5vh;
+        padding: 0 6vw 4vh;
+        text-align: center;
+    }
+    .content-new h1{
+        font-size: clamp(18px, 6vw, 26px);
+    }
+    .content-new p{
+        font-size: clamp(10px, 2.8vw, 13px);
+        line-height: 1.5;
+    }
+    .Righht{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3vh 4vw 4vh;
+        gap: 2vh;
+    }
+    .l1, .r1{
+        width: 46%;
+        margin-top: 0;
+        gap: 2vh;
+    }
+    .research, .analis, .design, .launch{
+        width: 42vw;
+        height: 25vh;
+        padding: 2vh;
+    }
+    .research h4, .analis h4, .design h4, .launch h4{
+        font-size: clamp(11px, 3vw, 14px);
+        margin-top: 1vh;
+    }
+    .research p, .analis p, .design p, .launch p{
+        font-size: clamp(9px, 2.4vw, 11px);
+    }
+    .l2{
+        margin-top: 2vh;
+        padding: 2.5vh;
+        width: 3vh;
+        height: 3vh;
+    }
+    .l2 i{
+        font-size: 15px;
+    }
+
+    /* --- PORTFOLIO --- */
+    #Portofolio{
+        height: auto;
+        padding: 10vh 0;
+    }
+    .bks-port{
+        margin-top: 7vh;
+    }
+    .port h3{
+        font-size: clamp(16px, 5vw, 22px);
+        text-align: center;
+    }
+    .port p{
+        font-size: clamp(10px, 2.6vw, 12px);
+        padding: 0 4vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .isi-port{
+        grid-template-columns: 1fr 1fr;
+        height: 112.07vh;
+        width: 92%;
+        gap: 3vw;
+        overflow: hidden;
+        padding: 0;
+    }
+    .pro1, .pro2, .pro3, .pro4, .pro5, .pro6,
+    .pro7, .pro8, .pro9, .pro10, .pro11, .pro12{
+        width: 98%;
+        height: 36vh;
+    }
+    .desc h5{
+        font-size: clamp(9px, 2.4vw, 11px);
+    }
+    .eler{
+        font-size: clamp(8px, 2vw, 10px);
+    }
+    .enis{
+        font-size: clamp(8px, 2.2vw, 10px);
+    }
+    .desc button{
+        font-size: clamp(8px, 2vw, 9px);
+        padding: 5px 8px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .nn{
+        margin-top: 4vh;
+    }
+    .see{
+        width: 44vw;
+        height: 5.5vh;
+        margin-top: 0;
+        font-size: clamp(10px, 2.5vw, 12px);
+    }
+    .Idea{
+        margin-top: 5vh;
+        padding: 0 4vw;
+    }
+    .Idea h2{
+        font-size: clamp(14px, 4.5vw, 20px);
+        text-align: center;
+    }
+    .Idea p{
+        font-size: clamp(9px, 2.4vw, 11px);
+        text-align: center;
+    }
+    .contact11{
+        width: 52vw;
+        max-width: 220px;
+        height: 6vh;
+        font-size: clamp(10px, 2.8vw, 12px);
+        margin: 4vh auto 0;
+        display: flex;
+    }
+
+    /* --- BLOG --- */
+    #Blog{
+        height: 80vh;
+        margin-top: -10vh;
+    }
+    #Blog .bks-port{
+        margin-top: 17vh;
+    }
+    .bks-bengkel{
+        padding: 0 4vw;
+    }
+    .bengkel-master{
+        width: 100%;
+        gap: 15px;
+        padding: 0 2vw;
+    }
+    .blog1, .blog2, .blog3, .blog4, .blog5, .blog6{
+        min-width: 42vw;
+        height: 25vh;
+    }
+    .bengkel-master p{
+        font-size: clamp(8px, 2.2vw, 10px);
+    }
+    .bengkel-master h6{
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+
+    /* --- SERVICES --- */
+    #Services{
+        height: auto;
+        padding: 10vh 0;
+    }
+    .both2{
+        flex-direction: column;
+        height: auto;
+    }
+    .keerie{
+        width: 100%;
+        height: auto;
+        padding: 5vh 6vw;
+        text-align: center;
+    }
+    .hub{
+        margin-top: 6vh;
+        margin-left: 0;
+        width: 100%;
+    }
+    .keerie h2{
+        font-size: clamp(18px, 6vw, 26px);
+    }
+    .keerie p{
+        font-size: clamp(10px, 2.8vw, 13px);
+        line-height: 1.5;
+        margin-top: 2vh;
+    }
+    .keerie button{
+        width: 50vw;
+        max-width: 200px;
+        height: 6vh;
+        margin: 3vh auto 0;
+        display: flex;
+        justify-content: center;
+        font-size: clamp(10px, 2.5vw, 12px);
+    }
+    .keanan{
+        width: 100%;
+        height: auto;
+        padding: 0 6vw 5vh;
+        gap: 3vh;
+    }
+    .UX, .UI, .WEB{
+        width: 86vw;
+        max-width: 340px;
+        height: auto;
+        padding: 3vh 4vw;
+    }
+    .keanan h4{
+        font-size: clamp(12px, 3.5vw, 15px);
+    }
+    .keanan p{
+        font-size: clamp(9px, 2.5vw, 11px);
+        line-height: 1.4;
+    }
+
+    /* --- CONTACT --- */
+    #Contact{
+        height: auto;
+        padding: 10vh 0 5vh;
+    }
+    .bk-port{
+        margin-top: 5vh;
+    }
+    .imsigma{
+        font-size: clamp(10px, 2.8vw, 12px);
+        padding: 0 6vw;
+    }
+    .bks-d{
+        margin-top: 5vh;
+        padding: 0 3vw;
+    }
+    .b-d{
+        border-radius: 24px;
+        width: 97%;
+        height: 140vh;
+        padding: 3vh 0;
+    }
+    .a-d{
+        border-radius: 20px;
+        width: 96%;
+        height: 99%;
+        padding-top: 2vh;
+    }
+    .d{
+        width : 100%;
+        height : 100%;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        flex-direction : column;
+    }
+    .m{
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        width : 100%;
+        height : 100%;
+    }
+    .discuss{
+        display : flex;
+        flex-direction : column;
+        width : 94%;
+        height : 96%;
+        flex-shrink : 0;
+        position : absolute;
+    }
+    .disc{
+        width: 100%;
+        padding: 4vh 6vw 3vh;
+    }
+    .disc h2{
+        font-size: clamp(16px, 5vw, 20px);
+    }
+    .disc p{
+        font-size: clamp(10px, 2.8vw, 13px);
+        line-height: 1.4;
+    }
+    .scu h2{
+        font-size: clamp(16px, 5vw, 20px);
+    }
+    .scu p{
+        font-size: clamp(10px, 2.8vw, 13px);
+    }
+    .disc .l2{
+        margin-left: 0;
+    }
+    .bb{
+        margin-top: 3vh;
+        padding: 0;
+    }
+    .bb .l2{
+        margin-left: 0;
+    }
+    .bb p{
+        font-size: clamp(10px, 2.8vw, 12px);
+    }
+    .bb h6{
+        font-size: clamp(11px, 3.1vw, 113px);
+    }
+    .l2r1{
+        margin-left: 2vw;
+    }
+    .ics{
+        margin-left: 2vw;
+        gap: 4px;
+    }
+    .ics a{
+        font-size: clamp(14px, 4vw, 16px);
+        margin: 0 5px;
+    }
+    .uss{
+        width: 100%;
+        padding: 3vh 6vw 5vh;
+    }
+    .uss p{
+        margin-top: 3vh;
+        font-size: clamp(10px, 2.8vw, 13px);
+    }
+    #name, #email, #location, #message{
+        width: 100%;
+        height: 6vh;
+        font-size: clamp(11px, 3vw, 14px);
+    }
+    #budget{
+        width: 47%;
+        font-size: 10px;
+    }
+    #subject{
+        width: 49%;
+        font-size: 10px;
+    }
+    .bbk{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    .ussr button{
+        width: 54vw;
+        max-width: 220px;
+        height: 6vh;
+        margin: 2vh auto 0;
+        display: flex;
+        justify-content: center;
+        font-size: clamp(10px, 2.5vw, 12px);
+    }
+
+    /* Slider */
+    .slider-container{
+        width: 90%;
+    }
+    .slide{
+        width: 180px;
+        padding: 0 15px;
+    }
+    .slide img{
+        max-height: 6vh;
+    }
+
+    /* --- FOOTER --- */
+    .q{
+        width: 101vw;
+    }
+    .ds{
+        margin-top: 150vh;
+        flex-direction: column;
+        height: 48vh;
+        width: 100%;
+        gap: 3vh;
+        flex-shrink: 0;
+    }
+    .ico2{
+        margin-top: 8vh;
+        width: auto;
+        height: auto;
+    }
+    .ico2 h2{
+        font-size: clamp(12px, 3.5vw, 16px);
+    }
+    .agan{
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .wa a{
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+    .wa{
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .copy{
+        width: 100%;
+        justify-content: center;
+        padding: 1vh 0;
+    }
+    .yright h6{
+        text-align: center;
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+    .agan h6{
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+    .madein{
+        text-align: center;
+        font-size: clamp(9px, 2.5vw, 11px);
+    }
+}

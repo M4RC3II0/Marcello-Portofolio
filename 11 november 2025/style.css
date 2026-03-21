@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+
+li{
+    width: 94%;
+    background-color: rgba(255, 255, 255, 0.341);
+    padding: 1.5vh;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+li:hover{
+    scale: 1.03;
+}
+
+/* Completed task style - visible, permanent color change */
+li.completed{
+    background-color: rgba(122, 217, 122, 0.6);
+    color: #083;
+    text-decoration: line-through;
+    opacity: 0.9;
+    cursor: default;
+}
+
+ul{
+    align-items: center;
+    gap: 4%;
+    margin-top: 2vh;
+    background-color: rgba(255, 0, 0, 0.464);
+    overflow-y: auto;
+    padding: 1vh;
+    width: 70%;
+    height: 60vh;
+    color: rgba(255, 255, 255, 0.844);
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.d{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    background-color: rgba(47, 138, 143, 0.463);
+    align-items: center;
+    border-radius: 7px;
+    width: 65%;
+    padding: 3vh;
+    height: 75vh;
+}
+
+ul::-webkit-scrollbar{
+    display: none;
+}
+
+.d input{
+    color: white;
+    width: 60%;
+    border-radius: 7px;
+    border: none;
+    padding: 3vh;
+    background-color: rgba(46, 184, 184, 0.277);
+}
