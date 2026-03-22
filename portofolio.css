@@ -1370,6 +1370,9 @@ input{
         height: auto;
         padding: 10vh 0;
     }
+    #Portofolio .bks-port{
+        margin-top: 17vh;
+    }  
     .bks-port{
         margin-top: 7vh;
     }
